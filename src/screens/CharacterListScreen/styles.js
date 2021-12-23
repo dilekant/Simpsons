@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     bottom: hp('2%'),
   },
   addButton: {
-    backgroundColor: '#258DD0',
+    backgroundColor: '#3084E0',
     width: hp('6.5%'),
     height: hp('6.5%'),
     borderRadius: hp('6.5%') / 2,

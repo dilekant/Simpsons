@@ -23,6 +23,10 @@ const styles = StyleSheet.create({
     fontSize: hp('2%'),
     flex: 1,
   },
+  deleteButton: {
+    height: '100%',
+    justifyContent: 'center',
+  },
 });
 
 export default styles;

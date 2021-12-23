@@ -23,6 +23,12 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 15,
   },
+  errorText: {
+    marginTop: 15,
+    color: 'red',
+    fontSize: hp(2.2),
+    textAlign: 'center',
+  },
 });
 
 export default styles;

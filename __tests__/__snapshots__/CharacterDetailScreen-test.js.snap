@@ -43,6 +43,7 @@ exports[`renders correctly 1`] = `
       <Text
         style={
           Object {
+            "color": "gray",
             "fontSize": 29.348000000000003,
             "textAlign": "center",
           }
@@ -51,6 +52,7 @@ exports[`renders correctly 1`] = `
       <Text
         style={
           Object {
+            "color": "gray",
             "fontSize": 24.012000000000004,
             "marginHorizontal": 15,
             "marginTop": 15,

@@ -61,9 +61,6 @@ const App = () => {
 
 const styles = StyleSheet.create({
   header: {
-    elevation: 0,
-    shadowOpacity: 0,
-    height: 80,
     backgroundColor: '#FFFFFF',
   },
   headerText: {

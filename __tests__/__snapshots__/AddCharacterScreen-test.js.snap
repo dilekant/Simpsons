@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 26.68,
+          "marginBottom": 5,
+          "marginTop": 15,
+        }
+      }
+    >
+      Name Surname: 
+    </Text>
+    <TextInput
+      onBlur={null}
+      onChangeText={[Function]}
+      onFocus={null}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6.67,
+            "borderWidth": 0.3,
+            "color": "#000000",
+            "fontSize": 26.68,
+            "height": 80.03999999999999,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          },
+          Object {},
+        ]
+      }
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 26.68,
+          "marginBottom": 5,
+          "marginTop": 15,
+        }
+      }
+    >
+      Job Title: 
+    </Text>
+    <TextInput
+      onBlur={null}
+      onChangeText={[Function]}
+      onFocus={null}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6.67,
+            "borderWidth": 0.3,
+            "color": "#000000",
+            "fontSize": 26.68,
+            "height": 80.03999999999999,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          },
+          Object {},
+        ]
+      }
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 26.68,
+          "marginBottom": 5,
+          "marginTop": 15,
+        }
+      }
+    >
+      About Him/Her: 
+    </Text>
+    <TextInput
+      multiline={true}
+      onBlur={null}
+      onChangeText={[Function]}
+      onFocus={null}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6.67,
+            "borderWidth": 0.3,
+            "color": "#000000",
+            "fontSize": 26.68,
+            "height": 80.03999999999999,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          },
+          Object {
+            "height": 173.42000000000002,
+            "textAlignVertical": "top",
+          },
+        ]
+      }
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 26.68,
+          "marginBottom": 5,
+          "marginTop": 15,
+        }
+      }
+    >
+      Image Link: 
+    </Text>
+    <TextInput
+      onBlur={null}
+      onChangeText={[Function]}
+      onFocus={null}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6.67,
+            "borderWidth": 0.3,
+            "color": "#000000",
+            "fontSize": 26.68,
+            "height": 80.03999999999999,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          },
+          Object {},
+        ]
+      }
+      value=""
+    />
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#3084E0",
+          "borderRadius": 6.67,
+          "height": 80.03999999999999,
+          "justifyContent": "center",
+          "marginTop": 15,
+          "opacity": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 26.68,
+          }
+        }
+      >
+        Add Character
+      </Text>
+    </View>
+  </View>
+</View>
+`;

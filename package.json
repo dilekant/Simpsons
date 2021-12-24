@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest -u",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -16,7 +16,7 @@
     "axios": "^0.24.0",
     "react": "17.0.2",
     "react-native": "0.66.4",
-    "react-native-responsive-screen": "^1.4.2",
+    "react-native-responsive-dimensions": "^3.1.1",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
     "react-native-svg": "^12.1.1"

@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Object {
+            "height": 466.9,
+            "marginBottom": 15,
+            "marginTop": 25,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 46.690000000000005,
+            "textAlign": "center",
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 29.348000000000003,
+            "textAlign": "center",
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 24.012000000000004,
+            "marginHorizontal": 15,
+            "marginTop": 15,
+          }
+        }
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;

@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
-import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {responsiveScreenHeight} from 'react-native-responsive-dimensions';
 import ListItem from '../../components/ListItem';
 import Add from '../../icons/Add';
 import {RefreshContext} from '../../contexts/RefreshContext';
@@ -115,7 +115,7 @@ const CharacterListScreen = ({navigation}) => {
         <TouchableOpacity
           onPress={() => navigation.navigate('AddCharacterScreen')}
           style={styles.addButton}>
-          <Add stroke={'#ffffff'} width={hp('3.5%')} height={hp('3.5%')} />
+          <Add stroke={'#ffffff'} width={responsiveScreenHeight(3.5)} height={responsiveScreenHeight(3.5)} />
         </TouchableOpacity>
       </View>
     </View>

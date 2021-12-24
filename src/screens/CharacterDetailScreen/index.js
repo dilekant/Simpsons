@@ -17,9 +17,9 @@ const CharacterDetailScreen = ({navigation, route}) => {
           source={{uri: detail?.avatar}}
           style={styles.image}
         />
-        <Text style={styles.nameText}>{detail?.name}</Text>
-        <Text style={styles.jobText}>{detail?.job}</Text>
-        <Text style={styles.aboutText}>{detail?.about}</Text>
+        <Text style={styles.nameText}>{detail.name}</Text>
+        <Text style={styles.jobText}>{detail.job}</Text>
+        <Text style={styles.aboutText}>{detail.about}</Text>
       </View>
     </ScrollView>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableOpacity, Image} from 'react-native';
-import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {responsiveScreenHeight} from 'react-native-responsive-dimensions';
 import Trash from '../../icons/Trash';
 import styles from './styles';
 
@@ -10,7 +10,7 @@ const ListItem = ({onPress, onPressDelete, name, avatar}) => {
       <Image resizeMode="contain" source={{uri: avatar}} style={styles.image} />
       <Text style={styles.text}>{name}</Text>
       <TouchableOpacity style={styles.deleteButton} onPress={onPressDelete}>
-        <Trash stroke={'#000000'} width={hp('3.5%')} height={hp('3.5%')} />
+        <Trash stroke={'#000000'} width={responsiveScreenHeight(3.5)} height={responsiveScreenHeight(3.5)} />
       </TouchableOpacity>
     </TouchableOpacity>
   );

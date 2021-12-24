@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {responsiveScreenHeight} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -13,11 +13,11 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginBottom: 5,
     color: '#000000',
-    fontSize: hp(2.2),
+    fontSize: responsiveScreenHeight(2),
   },
   input: {},
   inputAbout: {
-    height: hp(13),
+    height: responsiveScreenHeight(13),
     textAlignVertical: 'top',
   },
   button: {
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   errorText: {
     marginTop: 15,
     color: 'red',
-    fontSize: hp(2.2),
+    fontSize: responsiveScreenHeight(2.2),
     textAlign: 'center',
   },
 });

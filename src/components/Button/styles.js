@@ -1,18 +1,18 @@
 import { StyleSheet } from 'react-native';
-import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {responsiveScreenHeight} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   button: {
     width: '100%',
-    height: hp(6),
-    borderRadius: hp(0.5),
+    height: responsiveScreenHeight(6),
+    borderRadius: responsiveScreenHeight(0.5),
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#3084E0',
   },
   text: {
     color: '#FFFFFF',
-    fontSize: hp(2),
+    fontSize: responsiveScreenHeight(2),
   },
 });
 

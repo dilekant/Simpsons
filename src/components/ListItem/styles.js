@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {responsiveScreenWidth, responsiveScreenHeight} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   button: {
-    width: wp('100%'),
-    height: hp('8%'),
+    width: responsiveScreenWidth(100),
+    height: responsiveScreenHeight(8),
     alignItems: 'center',
     flexDirection: 'row',
     backgroundColor: '#ffffff',
@@ -13,14 +13,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   image: {
-    height: hp('5%'),
-    width: hp('3%'),
+    height: responsiveScreenHeight(5),
+    width: responsiveScreenHeight(3),
     //backgroundColor: 'red',
   },
   text: {
     marginLeft: 20,
     color: '#000000',
-    fontSize: hp('2%'),
+    fontSize: responsiveScreenHeight(2),
     flex: 1,
   },
   deleteButton: {

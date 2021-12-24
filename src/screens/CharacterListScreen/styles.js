@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {responsiveScreenWidth, responsiveScreenHeight} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -11,21 +11,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   addContainer: {
-    width: wp('100%'),
+    width: responsiveScreenWidth(100),
     position: 'absolute',
     alignItems: 'center',
-    bottom: hp('2%'),
+    bottom: responsiveScreenHeight(2),
   },
   addButton: {
     backgroundColor: '#3084E0',
-    width: hp('6.5%'),
-    height: hp('6.5%'),
-    borderRadius: hp('6.5%') / 2,
+    width: responsiveScreenHeight(6.5),
+    height: responsiveScreenHeight(6.5),
+    borderRadius: responsiveScreenHeight(6.5) / 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
   footer: {
-    height: hp('10.5%'),
+    height: responsiveScreenHeight(10.5),
   },
 });
 

@@ -16,7 +16,6 @@ import styles from './styles';
 const CharacterListScreen = ({navigation}) => {
   const {shouldRefresh, refreshProduct} = useContext(RefreshContext);
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     getSimpsons();
@@ -25,30 +24,23 @@ const CharacterListScreen = ({navigation}) => {
   useEffect(() => {
     const refreshListener = navigation.addListener('focus', () => {
       if (refreshProduct) {
-        onRefresh(true);
+        getSimpsons();
         shouldRefresh(false);
       }
     });
     return refreshListener;
   }, [navigation, refreshProduct]);
 
-  const onRefresh = async () => {
-    await getSimpsons();
-  };
-
   const getSimpsons = async () => {
-    setLoading(true);
     try {
       const value = await AsyncStorage.getItem('SIMPSONS');
       if (value !== null) {
         setData(JSON.parse(value));
-        setLoading(false);
       } else {
         getData();
       }
     } catch (e) {
       // error reading value
-      setLoading(false);
     }
   };
 
@@ -59,11 +51,9 @@ const CharacterListScreen = ({navigation}) => {
       .then(response => {
         setData(response.data);
         setSimpsons(response.data);
-        setLoading(false);
       })
       .catch(error => {
         console.log(error);
-        setLoading(false);
       });
   };
 
@@ -87,35 +77,33 @@ const CharacterListScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      {loading ? (
-        <View style={styles.loadingContainer}>
-          <ActivityIndicator size={'large'} color={'#000000'} />
-        </View>
-      ) : (
-        <FlatList
-          data={data}
-          style={styles.listContainer}
-          numColumns={1}
-          showsVerticalScrollIndicator={false}
-          keyExtractor={(item, index) => index.toString()}
-          renderItem={({item, index}) => (
-            <ListItem
-              {...item}
-              key={index}
-              onPress={() =>
-                navigation.navigate('CharacterDetailScreen', {detail: item})
-              }
-              onPressDelete={() => deletePress(item)}
-            />
-          )}
-          ListFooterComponent={<View style={styles.footer} />}
-        />
-      )}
+      <FlatList
+        data={data}
+        style={styles.listContainer}
+        numColumns={1}
+        showsVerticalScrollIndicator={false}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({item, index}) => (
+          <ListItem
+            {...item}
+            key={index}
+            onPress={() =>
+              navigation.navigate('CharacterDetailScreen', {detail: item})
+            }
+            onPressDelete={() => deletePress(item)}
+          />
+        )}
+        ListFooterComponent={<View style={styles.footer} />}
+      />
       <View style={styles.addContainer}>
         <TouchableOpacity
           onPress={() => navigation.navigate('AddCharacterScreen')}
           style={styles.addButton}>
-          <Add stroke={'#ffffff'} width={responsiveScreenHeight(3.5)} height={responsiveScreenHeight(3.5)} />
+          <Add
+            stroke={'#ffffff'}
+            width={responsiveScreenHeight(3.5)}
+            height={responsiveScreenHeight(3.5)}
+          />
         </TouchableOpacity>
       </View>
     </View>

@@ -1,5 +1,8 @@
-import { StyleSheet } from 'react-native';
-import {responsiveScreenWidth, responsiveScreenHeight} from 'react-native-responsive-dimensions';
+import {StyleSheet} from 'react-native';
+import {
+  responsiveScreenWidth,
+  responsiveScreenHeight,
+} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   button: {

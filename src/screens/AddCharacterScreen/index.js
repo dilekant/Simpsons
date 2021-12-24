@@ -31,7 +31,6 @@ const AddCharacterScreen = ({navigation}) => {
   };
 
   const setSimpsons = async response => {
-    console.log('response setle');
     try {
       const jsonValue = JSON.stringify(response);
       await AsyncStorage.setItem('SIMPSONS', jsonValue);
@@ -44,7 +43,7 @@ const AddCharacterScreen = ({navigation}) => {
 
   const addPress = () => {
     setError('');
-    if(name === '' || job === '' || about === '' || image === '') {
+    if (name === '' || job === '' || about === '' || image === '') {
       setError('Please fill in the blanks');
     } else {
       const newCharacter = {

@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 import {responsiveScreenHeight} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({

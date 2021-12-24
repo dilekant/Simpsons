@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     fontSize: responsiveScreenHeight(2),
     color: '#000000',
     paddingHorizontal: 10,
-    borderWidth: 0.5,
+    borderWidth: 0.3,
     borderColor: 'gray',
   },
 });

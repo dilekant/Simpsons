@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#ffffff',
     borderBottomColor: 'gray',
-    borderBottomWidth: 0.5,
+    borderBottomWidth: 0.3,
     paddingHorizontal: 15,
   },
   image: {

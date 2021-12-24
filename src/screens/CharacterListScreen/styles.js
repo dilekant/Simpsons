@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     width: responsiveScreenWidth(100),
     position: 'absolute',
     alignItems: 'center',
-    bottom: responsiveScreenHeight(2),
+    bottom: responsiveScreenHeight(3),
   },
   addButton: {
     backgroundColor: '#3084E0',

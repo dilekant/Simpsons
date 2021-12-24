@@ -29,7 +29,6 @@ const App = () => {
             options={{
               title: 'Simpsons',
               headerStyle: styles.header,
-              headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
             }}
           />
@@ -39,7 +38,6 @@ const App = () => {
             options={{
               title: 'Details',
               headerStyle: styles.header,
-              headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
             }}
           />
@@ -49,7 +47,6 @@ const App = () => {
             options={{
               title: 'Add New Character',
               headerStyle: styles.header,
-              headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
             }}
           />
@@ -62,9 +59,6 @@ const App = () => {
 const styles = StyleSheet.create({
   header: {
     backgroundColor: '#FFFFFF',
-  },
-  headerText: {
-    color: '#000000',
   },
 });
 

@@ -18,11 +18,13 @@ const styles = StyleSheet.create({
   jobText: {
     fontSize: responsiveScreenHeight(2.2),
     textAlign: 'center',
+    color: 'gray',
   },
   aboutText: {
     marginTop: 15,
     fontSize: responsiveScreenHeight(1.8),
     marginHorizontal: 15,
+    color: 'gray',
   },
 });
 
